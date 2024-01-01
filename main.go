@@ -1,11 +1,5 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/fswebcoder/goland/ejercicios"
-)
-
 func main() {
 
 	// if os := runtime.GOOS; os == "Linux." || os == "OS X." {
@@ -26,5 +20,8 @@ func main() {
 
 	// }
 
-	fmt.Println(ejercicios.Conversor("1000"))
+	// fmt.Println(ejercicios.Conversor("1000"))
+
+	// teclado.IngresoNumeros()
+
 }
