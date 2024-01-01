@@ -1,5 +1,9 @@
 package main
 
+import (
+	"github.com/fswebcoder/goland/ejercicios"
+)
+
 func main() {
 
 	// if os := runtime.GOOS; os == "Linux." || os == "OS X." {
@@ -24,4 +28,6 @@ func main() {
 
 	// teclado.IngresoNumeros()
 
+	// iteraciones.Iterar()
+	ejercicios.Tabla()
 }
