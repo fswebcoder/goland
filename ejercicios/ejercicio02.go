@@ -31,6 +31,7 @@ func Tabla() string {
 		fmt.Println("***************")
 		for i := 1; i <= 10; i++ {
 			texto += fmt.Sprintf("%d X %d = %d \n", numero, i, i*numero)
+
 		}
 	}
 

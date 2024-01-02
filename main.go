@@ -29,5 +29,5 @@ func main() {
 	// teclado.IngresoNumeros()
 
 	// iteraciones.Iterar()
-	files.SumaTabla()
+	files.LeerArchivos()
 }
