@@ -9,6 +9,7 @@ import (
 
 var numero int
 var err error
+var texto string
 
 // Ejercicio 02
 // Crear un archivo GO en el paquete 'ejercicios' llamado 'ejercici002.go'
@@ -18,7 +19,7 @@ var err error
 // muestre por pantalla
 // En Main, llamar a dicha función
 // Grabar, ejecutar y luego subir todo a Github
-func Tabla() {
+func Tabla() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	fmt.Println("Ingrese un número entero")
 
@@ -29,13 +30,9 @@ func Tabla() {
 		}
 		fmt.Println("***************")
 		for i := 1; i <= 10; i++ {
-			numeroComoCadena := strconv.Itoa(numero)
-			iComoCadena := strconv.Itoa(i)
-			multiplicacionComoCadena := strconv.Itoa(numero * i)
-			resultado := numeroComoCadena + " x " + iComoCadena + " = " + multiplicacionComoCadena
-			fmt.Println(resultado)
+			texto += fmt.Sprintf("%d X %d = %d \n", numero, i, i*numero)
 		}
 	}
-	Tabla()
 
+	return texto
 }

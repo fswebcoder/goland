@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/fswebcoder/goland/ejercicios"
+	"github.com/fswebcoder/goland/files"
 )
 
 func main() {
@@ -29,5 +29,5 @@ func main() {
 	// teclado.IngresoNumeros()
 
 	// iteraciones.Iterar()
-	ejercicios.Tabla()
+	files.SumaTabla()
 }
