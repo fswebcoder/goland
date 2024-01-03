@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/fswebcoder/goland/files"
+	"github.com/fswebcoder/goland/funciones"
 )
 
 func main() {
@@ -29,5 +29,5 @@ func main() {
 	// teclado.IngresoNumeros()
 
 	// iteraciones.Iterar()
-	files.LeerArchivos()
+	funciones.LlamarClosure()
 }
