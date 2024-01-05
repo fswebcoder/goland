@@ -1,8 +1,7 @@
 package main
 
 import (
-	"github.com/fswebcoder/goland/ejerinterfaces"
-	"github.com/fswebcoder/goland/models"
+	"github.com/fswebcoder/goland/defer_panic"
 )
 
 func main() {
@@ -31,11 +30,13 @@ func main() {
 
 	// iteraciones.Iterar()
 
-	Pedro := new(models.Mujer)
-	Pedro.Edad = 20
-	Pedro.Altura = 1.84
-	Pedro.Peso = 84
-	Pedro.Vivo = true
+	// Pedro := new(models.Mujer)
+	// Pedro.Edad = 20
+	// Pedro.Altura = 1.84
+	// Pedro.Peso = 84
+	// Pedro.Vivo = true
 
-	ejerinterfaces.HumanosRespirando(Pedro)
+	// ejerinterfaces.HumanosRespirando(Pedro)
+
+	defer_panic.VemosUnPanic()
 }
