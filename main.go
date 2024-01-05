@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/fswebcoder/goland/funciones"
+	"github.com/fswebcoder/goland/mapas"
 )
 
 func main() {
@@ -29,5 +29,5 @@ func main() {
 	// teclado.IngresoNumeros()
 
 	// iteraciones.Iterar()
-	funciones.LlamarClosure()
+	mapas.MostrarMapas()
 }
