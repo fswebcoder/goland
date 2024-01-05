@@ -1,6 +1,8 @@
 package main
 
-import "github.com/fswebcoder/goland/arreglos_slices"
+import (
+	"github.com/fswebcoder/goland/funciones"
+)
 
 func main() {
 
@@ -27,5 +29,5 @@ func main() {
 	// teclado.IngresoNumeros()
 
 	// iteraciones.Iterar()
-	arreglos_slices.Capacidad()
+	funciones.LlamarClosure()
 }
