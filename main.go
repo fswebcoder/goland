@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/fswebcoder/goland/mapas"
+	"github.com/fswebcoder/goland/users"
 )
 
 func main() {
@@ -29,5 +29,5 @@ func main() {
 	// teclado.IngresoNumeros()
 
 	// iteraciones.Iterar()
-	mapas.MostrarMapas()
+	users.AltaUsuarios()
 }
