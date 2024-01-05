@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/fswebcoder/goland/users"
+	"github.com/fswebcoder/goland/ejerinterfaces"
+	"github.com/fswebcoder/goland/models"
 )
 
 func main() {
@@ -29,5 +30,12 @@ func main() {
 	// teclado.IngresoNumeros()
 
 	// iteraciones.Iterar()
-	users.AltaUsuarios()
+
+	Pedro := new(models.Mujer)
+	Pedro.Edad = 20
+	Pedro.Altura = 1.84
+	Pedro.Peso = 84
+	Pedro.Vivo = true
+
+	ejerinterfaces.HumanosRespirando(Pedro)
 }
