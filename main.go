@@ -1,7 +1,9 @@
 package main
 
 import (
-	"github.com/fswebcoder/goland/defer_panic"
+	"fmt"
+
+	"github.com/fswebcoder/goland/goroutines"
 )
 
 func main() {
@@ -38,5 +40,9 @@ func main() {
 
 	// ejerinterfaces.HumanosRespirando(Pedro)
 
-	defer_panic.VemosUnPanic()
+	go goroutines.MiNombreLentooo("Fabio")
+
+	fmt.Println("Estoy aqui")
+	var x string
+	fmt.Scanln(&x)
 }
