@@ -39,10 +39,12 @@ func main() {
 	// Pedro.Vivo = true
 
 	// ejerinterfaces.HumanosRespirando(Pedro)
-
-	go goroutines.MiNombreLentooo("Fabio")
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLentooo("Fabio", canal1)
+	defer func() {
+		<-canal1
+	}()
 
 	fmt.Println("Estoy aqui")
-	var x string
-	fmt.Scanln(&x)
+
 }
