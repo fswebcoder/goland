@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/fswebcoder/goland/goroutines"
+	"github.com/fswebcoder/goland/middleware"
 )
 
 func main() {
@@ -39,12 +37,15 @@ func main() {
 	// Pedro.Vivo = true
 
 	// ejerinterfaces.HumanosRespirando(Pedro)
-	canal1 := make(chan bool)
-	go goroutines.MiNombreLentooo("Fabio", canal1)
-	defer func() {
-		<-canal1
-	}()
+	// canal1 := make(chan bool)
+	// go goroutines.MiNombreLentooo("Fabio", canal1)
+	// defer func() {
+	// 	<-canal1
+	// }()
 
-	fmt.Println("Estoy aqui")
+	// fmt.Println("Estoy aqui")
 
+	// webserver.MiWebServer()
+
+	middleware.MiMiddleware()
 }
